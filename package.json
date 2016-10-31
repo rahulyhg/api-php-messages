@@ -1,0 +1,42 @@
+{
+  "name": "angularphp",
+  "version": "1.0.0",
+  "description": "bootstrap gulp sass npm php slim api",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "",
+    "url": ""
+  },
+  "keywords": [
+    "bootstrap",
+    "sass",
+    "npm",
+    "gulp"
+  ],
+  "author": "jestrade",
+  "license": "ISC",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "devDependencies": {
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-cache": "^0.4.5",
+    "gulp-concat": "^2.6.0",
+    "gulp-imagemin": "^3.0.3",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^2.0.0",
+    "jquery": "^3.1.1"
+  },
+  "dependencies": {
+    "angular-route": "^1.5.8",
+    "angularjs": "0.0.1",
+    "bootstrap-sass": "^3.3.7"
+  }
+}

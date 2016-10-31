@@ -1,0 +1,51 @@
+ <section>
+            <div class="container">
+                    <div class="row">
+                        <h1>Contact</h1>
+                            <div class="form-group col-sm-6">
+                                <label for="name" class="h4">Name</label>
+                                <input type="text" class="form-control" ng-model="objMessage.name" placeholder="Enter name" required>
+                            </div>
+                            <div class="form-group col-sm-6">
+                                <label for="email" class="h4">Email</label>
+                                <input type="text" class="form-control" ng-model="objMessage.email" placeholder="Enter email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="h4 ">Message</label>
+                            <textarea ng-model="objMessage.message" class="form-control" rows="5" placeholder="Enter your message" required></textarea>
+                        </div>
+                        <button type="button" id="form-submit" class="btn btn-success btn-lg pull-right" ng-click="send()" >Submit</button>
+                        
+                        
+                        
+                        <p>&nbsp;</p>
+                        
+            </div>
+        </section>
+        
+         <section>
+            <div class="container">
+                    <div class="row">
+        <table id="table" class="table table-stripped table-bordered" ng-init="load()"> 
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Message</th>
+                <th>Opts</th>
+            </tr>
+            
+        </thead>
+        <tbody>
+        <tr ng-repeat="message in messages">
+            <td>{{ message.name }}</td>
+            <td>{{ message.email }}</td>
+            <td>{{ message.message }}</td>
+            <td><button class="btn btn-danger" ng-click="delete(message._id)">Delete</button></td>
+        </tr>
+        </tbody>
+        </table>    
+        
+        </div> </div>
+        </section>
